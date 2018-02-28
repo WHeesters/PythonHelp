@@ -27,5 +27,6 @@ for f in os.listdir():
     f_course = f_course.strip()
     f_num = f_num.strip()[1:].zfill(2)  # Gets anything from the second character on and adds a 0 on the beginning
 
-    new_names = f'{f_num}_{f_title}{f_ext}'
-    os.rename(f, new_names)
+    new_names = f'{f_num}_{f_title}{f_ext}'  # Formats the new names
+    os.rename(f, new_names)  # Renames all file
+
