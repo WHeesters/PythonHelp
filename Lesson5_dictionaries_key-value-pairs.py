@@ -6,24 +6,24 @@ print("DICTIONARIES")
 print("================================================")
 # Dictionaries allows us to work with key-value pairs and consist of JSON
 
-student = {1: 3, 'name': 'John', 'age': 25, 'address': 'LA', 'courses': ['Math', 'CompSci']}
-student['phone'] = '555-WE-TIP'  # Add a key-value pair to a dict
-student['name'] = 'Will'  # Updates a value at a specific key
+student = {1: 3, "name": "John", "age": 25, "address": "LA", "courses": ["Math", "CompSci"]}
+student["phone"] = "555-WE-TIP"  # Add a key-value pair to a dict
+student["name"] = "Will"  # Updates a value at a specific key
 
-student.update({'name': 'CJ', 'age': 28, 'license': 'B'})  # Updates and/or adds key-value pairs
+student.update({"name": "CJ", "age": 28, "license": "B"})  # Updates and/or adds key-value pairs
 
-del student['license']  # Deletes a key-value pair
-popped = student.pop('address')  # Deletes a key-value pair and stores it in a variable
+del student["license"]  # Deletes a key-value pair
+popped = student.pop("address")  # Deletes a key-value pair and stores it in a variable
 
 print("Dictionary: " + str(student))  # Prints the entire dict
-print("Value at key 'name': " + str(student['name']))  # Prints the value at a specified key
-print("Value at key 'courses': " + str(student['courses']))  # This can also be a key for a list
+print("Value at key 'name': " + str(student["name"]))  # Prints the value at a specified key
+print("Value at key 'courses': " + str(student["courses"]))  # This can also be a key for a list
 print("Value at key '1': " + str(student[1]))  # A key can also be an int
 
 print("")
-phone = student.get('phone')  # Gets the value at a specified key
-address = student.get('address')  # Gets the velaue at a non-existant key
-DoB = student.get('DoB', 'Not Found')  # Gets the velaue at a non-existant key and returns the second paramater
+phone = student.get("phone")  # Gets the value at a specified key
+address = student.get("address")  # Gets the velaue at a non-existant key
+DoB = student.get("DoB", "Not Found")  # Gets the velaue at a non-existant key and returns the second paramater
 
 print("Value at specified key: " + str(phone))
 print("Value at non-existant key (address): " + str(address))

@@ -14,14 +14,14 @@ print("Blank function returns: " + str(blank_func()))
 
 
 def hello_func():
-    print('This is the output of hello_func()')
+    print("This is the output of hello_func()")
 
 
 hello_func()  # Call a function
 
 
 def return_func():
-    return 'This is the output of return_func()'
+    return "This is the output of return_func()"
 
 
 return_func()  # Won't print anything
@@ -31,21 +31,22 @@ print(return_func().upper() + " in uppercase")  # Because you know the return ty
 
 
 def arg_func(arg):  # A function with an argument
-    return f'{arg} Function.'  # f notation to use parameters inside a string instead of using the .format() function
+    return f"{arg} Function."  # f notation to use parameters inside a string instead of using the .format() function
 
 
-print(arg_func('Argument'))  # Call a function with a parameter
+print(arg_func("Argument"))  # Call a function with a parameter
 
 
-def args_func(arg, arg2='Argument 2'):  # A function with multiple arguments, name has a default value of 'Argument 2'
-    return f'{arg}, {arg2}.'
+def args_func(arg, arg2="Argument 2"):  # A function with multiple arguments, name has a default value of 'Argument 2'
+    return f"{arg}, {arg2}."
 
 
-print("The output of args_func('Argument'): " + args_func('Argument'))  # Prints the arg function with a default second parameter because we didn't provide one
-print("The output of args_func('Argument', 'CJ'): " + args_func('Argument', 'CJ'))
+print("The output of args_func('Argument'): " + args_func("Argument"))  # Prints the arg function with a default second parameter because we didn't provide one
+print("The output of args_func('Argument', 'CJ'): " + args_func("Argument", "CJ"))
 
 
-def cj_info(*args, **kwargs):  # *args and **kwargs are used to receive an arbitrary number of arguments and key-word arguments
+def cj_info(*args,
+            **kwargs):  # *args and **kwargs are used to receive an arbitrary number of arguments and key-word arguments
     print("The arguments: " + str(args))
     print("The key-word arguments: " + str(kwargs))
 
@@ -54,9 +55,8 @@ print("")
 print("The output of cj_info('Uzi','Baseball bat',name='CJ',age=22): ")
 cj_info("Uzi", "Baseball bat", name="CJ", age=22)
 
-
-weapons = ['Uzi', 'Baseball bat', 'Silenced pistol']
-info = {'name': 'CJ', 'age': 22, 'occupation': 'na'}
+weapons = ["Uzi", "Baseball bat", "Silenced pistol"]
+info = {"name": "CJ", "age": 22, "occupation": "na"}
 
 print("")
 print("The output of cj_info(weapons, info): ")
@@ -88,12 +88,13 @@ def days_in_month(year, month):
     """Return number of days in that month in that year."""
 
     if not 1 <= month <= 12:
-        return 'Invalid Month'
+        return "Invalid Month"
 
     if month == 2 and is_leap(year):
         return 29
 
     return month_days[month]
+
 
 #################################################
 ## This is the end of the standard library code##
@@ -104,5 +105,3 @@ print("The output of is_leap(2018): " + str(is_leap(2018)))
 print("The output of is_leap(2020): " + str(is_leap(2020)))
 print("The output of days_in_month(2018, 2): " + str(days_in_month(2018, 2)))
 print("The output of days_in_month(2020, 2): " + str(days_in_month(2020, 2)))
-
-

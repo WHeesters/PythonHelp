@@ -4,17 +4,17 @@ print(sys.version)
 print("================================================")
 print("CUSTOM MODULES")
 print("================================================")
-from modules import l9_module as l9             # Use the as keyword to give a name to a imported module
+from modules import l9_module as l9  # Use the as keyword to give a name to a imported module
 # import modules.my_module as l9                # Another possibility
 # from modules.my_module import *               # To import all from a module
 from modules.l9_module import find_index, test  # To import a single function/variable etc.
 
-weapons = ['Uzi', 'M9', 'Baseball bat', 'Sniper', 'Sawn-off shotgun', 'Silenced pistol']
+weapons = ["Uzi", "M9", "Baseball bat", "Sniper", "Sawn-off shotgun", "Silenced pistol"]
 
-index = l9.find_index(weapons, 'M9')
+index = l9.find_index(weapons, "M9")
 print("The index of mm.find_index(weapons, 'M9') is " + str(index))  # This uses the entire module import
 
-index_func = find_index(weapons, 'Sawn-off shotgun')
+index_func = find_index(weapons, "Sawn-off shotgun")
 print("The index of find_index(weapons, 'Sawn-off shotgun') is " + str(index_func))  # This uses only the imported function
 
 print("")

@@ -29,19 +29,19 @@ print("")
 user = "Admin"
 logged_in = False
 
-print("AND:") # AND
+print("AND:")  # AND
 if user == "Admin" and logged_in:
     print("Admin is logged in")
 else:
     print("Bad creds")
 
-print("OR:") # OR
+print("OR:")  # OR
 if user == "Admin" or logged_in:
     print("Admin is logged in")
 else:
     print("Bad creds")
 
-print("NOT:") # NOT
+print("NOT:")  # NOT
 if not logged_in:
     print("Please log in")
 else:
@@ -50,29 +50,29 @@ else:
 print("")
 print("")
 print("================================================")
-print("'is' vs. '=='")
+print("" is " vs. " == "")
 print("================================================")
 
-a = [1,2,3]
-b = [1,2,3]
+a = [1, 2, 3]
+b = [1, 2, 3]
 
-print("a equals b: " + str(a == b)) # Returns True
-print("a is b: " + str(a is b)) # Returns False
+print("a equals b: " + str(a == b))  # Returns True
+print("a is b: " + str(a is b))  # Returns False
 
 print("")
 print("The id's of a and b are different:")
 print("id a: " + str(id(a)))
 print("id b: " + str(id(b)))
 
-b = a # Sets b equal to a
+b = a  # Sets b equal to a
 
 print("")
 print("If b = a, the id is the same: ")
 print("id a: " + str(id(a)))
 print("id b: " + str(id(b)))
 print("And now a equals b and a is b are both True:")
-print("a equals b: " + str(a == b)) # Returns True
-print("a is b: " + str(a is b)) # Returns False
+print("a equals b: " + str(a == b))  # Returns True
+print("a is b: " + str(a is b))  # Returns False
 print("")
 print("The is operator is the same as saying id(a) == id(b):")
 print(id(a) == id(b))
@@ -84,11 +84,11 @@ print("False values")
 print("================================================")
 
 # False values:
-    # False
-    # None
-    # Zero of any numeric type
-    # Any empty sequence. i.e. '', (), []
-    # Any empty mapping. i.e. {}
+# False
+# None
+# Zero of any numeric type
+# Any empty sequence. i.e. "", (), []
+# Any empty mapping. i.e. {}
 
 print("Condition = False")
 condition = False
@@ -123,7 +123,7 @@ else:
     print("Evaluated to False")
 
 print("Condition = ''")
-condition = ''
+condition = ""
 
 if condition:
     print("Evaluated to True")
