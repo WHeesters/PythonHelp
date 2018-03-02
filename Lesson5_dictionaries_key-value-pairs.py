@@ -22,12 +22,12 @@ print("Value at key '1': " + str(student[1]))  # A key can also be an int
 
 print("")
 phone = student.get("phone")  # Gets the value at a specified key
-address = student.get("address")  # Gets the velaue at a non-existant key
-DoB = student.get("DoB", "Not Found")  # Gets the velaue at a non-existant key and returns the second paramater
+address = student.get("address")  # Gets the value at a non-existent key
+DoB = student.get("DoB", "Not Found")  # Gets the value at a non-existent key and returns the second parameter
 
 print("Value at specified key: " + str(phone))
-print("Value at non-existant key (address): " + str(address))
-print("Value at non-existant key (DoB): " + str(DoB))
+print("Value at non-existent key (address): " + str(address))
+print("Value at non-existent key (DoB): " + str(DoB))
 
 print("")
 print("Popped key-value pair: " + str(popped))

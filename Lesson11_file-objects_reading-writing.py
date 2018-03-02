@@ -8,8 +8,7 @@ print("---------------------")
 print("NOT RECOMMENDED")
 print("---------------------")
 # The not recommended method
-notRecommendedWay = open("files/test.txt",
-                         "r")  # Opens the file at the given path with the given mode r=read w=write r+=read/write
+notRecommendedWay = open("files/test.txt", "r")  # Opens the file at the given path with the given mode r=read w=write r+=read/write
 
 print(notRecommendedWay.name)  # Prints the name of the file
 print(notRecommendedWay.mode)  # Prints the mode with which the file is opened
