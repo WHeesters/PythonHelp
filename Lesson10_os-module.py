@@ -12,7 +12,7 @@ print(dir(os))  # Gets all attributes and methods from a module
 print("")
 print("The current working dir is: " + os.getcwd())  # Gets current working dir
 
-os.chdir("../PythonHelp/files/")  # Changes current working dir
+os.chdir("./files/")  # Changes current working dir
 
 print("The current working dir is now: " + os.getcwd())
 print("The files and folders in the current dir are: ")
